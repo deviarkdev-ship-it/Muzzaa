@@ -1,10 +1,10 @@
 from pyrogram import filters
-from pyrogram .types import Message
+from pyrogram.types import Message
 from Music import app
-from Music .core .call import Anony
-from Music .utils .database import is_music_playing ,music_off
-from Music .utils .decorators import AdminRightsCheck
-from Music .utils .inline import close_markup
+from Music.core.call import Anony
+from Music.utils.database import is_music_playing ,music_off
+from Music.utils.decorators import AdminRightsCheck
+from Music.utils.inline import close_markup
 from config import BANNED_USERS
 
 @app .on_message (filters .command (['pause','cpause'])&filters .group &~BANNED_USERS )
