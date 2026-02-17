@@ -1,6 +1,6 @@
 from pyrogram import Client ,errors
-from pyrogram .enums import ChatMemberStatus ,ParseMode
-from pyrogram .types import BotCommand ,BotCommandScopeDefault ,BotCommandScopeAllGroupChats
+from pyrogram.enums import ChatMemberStatus ,ParseMode
+from pyrogram.types import BotCommand ,BotCommandScopeDefault ,BotCommandScopeAllGroupChats
 import config
 from ..logging import LOGGER
 
