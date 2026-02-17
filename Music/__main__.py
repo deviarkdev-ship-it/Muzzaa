@@ -6,7 +6,7 @@ from pyrogram import errors as pyrogram_errors
 from pyrogram.errors import FloodWait ,UnknownError
 
 if not hasattr (pyrogram_errors ,'GroupcallForbidden'):
-    from pyrogram .errors import RPCError
+    from pyrogram.errors import RPCError
     class GroupcallForbidden (RPCError ):
 
         CODE =400
