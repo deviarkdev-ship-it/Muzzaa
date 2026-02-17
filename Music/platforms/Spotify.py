@@ -1,7 +1,7 @@
 import re
 import spotipy
-from spotipy .oauth2 import SpotifyClientCredentials
-from Music .utils .youtube_search import VideosSearch
+from spotipy.oauth2 import SpotifyClientCredentials
+from Music.utils.youtube_search import VideosSearch
 import config
 
 class SpotifyAPI :
