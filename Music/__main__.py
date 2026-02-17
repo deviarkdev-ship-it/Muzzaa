@@ -3,7 +3,7 @@ import importlib
 import sys
 from pyrogram import idle
 from pyrogram import errors as pyrogram_errors
-from pyrogram .errors import FloodWait ,UnknownError
+from pyrogram.errors import FloodWait ,UnknownError
 
 if not hasattr (pyrogram_errors ,'GroupcallForbidden'):
     from pyrogram .errors import RPCError
@@ -13,15 +13,15 @@ if not hasattr (pyrogram_errors ,'GroupcallForbidden'):
         NAME ="GROUPCALL_FORBIDDEN"
     pyrogram_errors .GroupcallForbidden =GroupcallForbidden
 
-from pytgcalls .exceptions import NoActiveGroupCall
+from pytgcalls.exceptions import NoActiveGroupCall
 from ntgcalls import TelegramServerError
 import config
 from Music import LOGGER ,app ,userbot
-from Music .core .call import Anony
-from Music .misc import sudo
-from Music .plugins import ALL_MODULES
-from Music .utils .database import get_banned_users ,get_gbanned
-from Music .utils .error_handler import ErrorHandler ,handle_unknown_constructor
+from Music.core.call import Anony
+from Music.misc import sudo
+from Music.plugins import ALL_MODULES
+from Music.utils.database import get_banned_users ,get_gbanned
+from Music.utils.error_handler import ErrorHandler ,handle_unknown_constructor
 from config import BANNED_USERS
 
 RECONNECT_ATTEMPTS =0
@@ -68,7 +68,7 @@ async def init ():
         except Exception as e :
             LOGGER (__name__ ).error (f"Failed to import plugin {all_module }: {e }")
 
-    LOGGER ('ArmedMusic.plugins').info ('Successfully Imported Modules...')
+    LOGGER ('Music.plugins').info ('Successfully Imported Modules...')
 
     try :
         await userbot .start ()
@@ -104,7 +104,7 @@ async def init ():
     await idle ()
 
     await app .stop ()
-    LOGGER ('ArmedMusic').info ('Stopping Armed Music Bot...')
+    LOGGER ('Music').info ('Stopping Armed Music Bot...')
 
 def _handle_loop_exception (loop ,context ):
 
