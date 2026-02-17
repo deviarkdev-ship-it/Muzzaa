@@ -2,7 +2,7 @@ import re
 from typing import Union
 import aiohttp
 from bs4 import BeautifulSoup
-from Music .utils .youtube_search import VideosSearch
+from Music.utils.youtube_search import VideosSearch
 
 class AppleAPI :
 
