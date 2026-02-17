@@ -1,12 +1,12 @@
 import asyncio
 
 from pyrogram import filters
-from pyrogram .types import InlineKeyboardButton ,InlineKeyboardMarkup ,CallbackQuery
+from pyrogram.types import InlineKeyboardButton ,InlineKeyboardMarkup ,CallbackQuery
 
 from Music import YouTube ,app
-from Music .core .call import Anony
-from Music .misc import SUDOERS ,db
-from Music .utils .database import (
+from Music.core.call import Anony
+from Music.misc import SUDOERS ,db
+from Music.utils.database import (
 get_active_chats ,
 get_lang ,
 get_upvote_count ,
@@ -17,10 +17,10 @@ music_off ,
 music_on ,
 set_loop ,
 )
-from Music .utils .decorators .language import languageCB
-from Music .utils .formatters import seconds_to_min ,remove_emoji
-from Music .utils .inline import close_markup ,stream_markup ,stream_markup_timer
-from Music .utils .thumbnails import get_thumb
+from Music.utils.decorators.language import languageCB
+from Music.utils.formatters import seconds_to_min ,remove_emoji
+from Music.utils.inline import close_markup ,stream_markup ,stream_markup_timer
+from Music.utils.thumbnails import get_thumb
 from config import (
 BANNED_USERS ,
 SOUNCLOUD_IMG_URL ,
