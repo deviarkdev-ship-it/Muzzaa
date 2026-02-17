@@ -4,30 +4,30 @@ from datetime import datetime ,timedelta
 from typing import Union
 
 from pyrogram import Client
-from pyrogram .types import InlineKeyboardMarkup
+from pyrogram.types import InlineKeyboardMarkup
 from pytgcalls import PyTgCalls
-from pytgcalls .exceptions import (
+from pytgcalls.exceptions import (
 NoActiveGroupCall ,
 )
 
 try :
-    from pytgcalls .exceptions import AlreadyJoinedError
+    from pytgcalls.exceptions import AlreadyJoinedError
 except ImportError :
     class AlreadyJoinedError (Exception ):
 
         pass
 
 from ntgcalls import TelegramServerError
-from pytgcalls .types import Update ,StreamEnded
+from pytgcalls.types import Update ,StreamEnded
 from pytgcalls import filters as fl
-from pytgcalls .types import AudioQuality ,VideoQuality
-from pytgcalls .types import MediaStream ,ChatUpdate
+from pytgcalls.types import AudioQuality ,VideoQuality
+from pytgcalls.types import MediaStream ,ChatUpdate
 
 import config
 from config import autoclean
 from Music import LOGGER ,YouTube ,app
-from Music .misc import db
-from Music .utils .database import (
+from Music.misc import db
+from Music.utils .database import (
 add_active_chat ,
 add_active_video_chat ,
 get_lang ,
@@ -39,10 +39,10 @@ remove_active_chat ,
 remove_active_video_chat ,
 set_loop ,
 )
-from Music .utils .exceptions import AssistantErr
-from Music .utils .formatters import check_duration ,seconds_to_min ,remove_emoji
-from Music .utils .inline .play import stream_markup
-from Music .utils .thumbnails import get_thumb
+from Music.utils .exceptions import AssistantErr
+from Music.utils .formatters import check_duration ,seconds_to_min ,remove_emoji
+from Music.utils .inline .play import stream_markup
+from Music.utils .thumbnails import get_thumb
 from strings import get_string
 
 autoend ={}
