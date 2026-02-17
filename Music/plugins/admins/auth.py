@@ -1,10 +1,10 @@
 from pyrogram import filters
-from pyrogram .types import Message
+from pyrogram.types import Message
 from Music import app
-from Music .utils import extract_user ,int_to_alpha
-from Music .utils .database import delete_authuser ,get_authuser ,get_authuser_names ,save_authuser
-from Music .utils .decorators import AdminActual ,language
-from Music .utils .inline import close_markup
+from Music.utils import extract_user ,int_to_alpha
+from Music.utils .database import delete_authuser ,get_authuser ,get_authuser_names ,save_authuser
+from Music.utils .decorators import AdminActual ,language
+from Music.utils .inline import close_markup
 from config import BANNED_USERS ,adminlist
 
 @app .on_message (filters .command ('auth')&filters .group &~BANNED_USERS )
