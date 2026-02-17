@@ -1,6 +1,6 @@
-from motor .motor_asyncio import AsyncIOMotorClient
+from motor.motor_asyncio import AsyncIOMotorClient
 from pymongo import MongoClient
-from pymongo .errors import OperationFailure ,ServerSelectionTimeoutError
+from pymongo.errors import OperationFailure ,ServerSelectionTimeoutError
 from config import MONGO_DB_URI ,MONGO_DB_NAME
 from ..logging import LOGGER
 import time
