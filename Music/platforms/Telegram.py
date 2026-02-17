@@ -2,10 +2,10 @@ import asyncio
 import os
 import time
 from typing import Union
-from pyrogram .types import InlineKeyboardButton ,InlineKeyboardMarkup ,Voice
+from pyrogram.types import InlineKeyboardButton ,InlineKeyboardMarkup ,Voice
 import config
 from Music import app
-from Music .utils .formatters import check_duration ,convert_bytes ,get_readable_time ,seconds_to_min
+from Music.utils.formatters import check_duration ,convert_bytes ,get_readable_time ,seconds_to_min
 
 class TeleAPI :
 
