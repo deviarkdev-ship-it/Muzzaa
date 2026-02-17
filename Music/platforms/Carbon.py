@@ -1,5 +1,5 @@
 import random
-from os .path import realpath
+from os.path import realpath
 
 import aiohttp
 from aiohttp import client_exceptions
