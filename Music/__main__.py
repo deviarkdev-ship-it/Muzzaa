@@ -64,7 +64,7 @@ async def init ():
 
     for all_module in ALL_MODULES :
         try :
-            importlib .import_module ('ArmedMusic.plugins'+all_module )
+            importlib .import_module ('Music.plugins'+all_module )
         except Exception as e :
             LOGGER (__name__ ).error (f"Failed to import plugin {all_module }: {e }")
 
@@ -90,7 +90,7 @@ async def init ():
     try :
         await Anony .stream_call ('https://image2url.com/r2/default/videos/1769268795930-72965ce5-60f7-4bf2-bdcd-e5a49cce8ad4.mp4')
     except NoActiveGroupCall :
-        LOGGER ('ArmedMusic').error ('Please enable videochat in your log group/channel.\n\nStopping Bot...')
+        LOGGER ('Music').error ('Please enable videochat in your log group/channel.\n\nStopping Bot...')
         exit ()
     except Exception as e :
         LOGGER (__name__ ).warning (f"Stream test failed (non-critical): {type (e ).__name__ }: {e }")
@@ -104,7 +104,7 @@ async def init ():
     await idle ()
 
     await app .stop ()
-    LOGGER ('Music').info ('Stopping Armed Music Bot...')
+    LOGGER ('Music').info ('Stopping Music Bot...')
 
 def _handle_loop_exception (loop ,context ):
 
